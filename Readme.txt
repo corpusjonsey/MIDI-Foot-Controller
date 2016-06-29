@@ -2,7 +2,10 @@ MIDI Foot Controller firmware for Elektron Octatrack Pickup Machine control.
 
 Use this firmware at your own risk!
 
-I wanted to customize the firmware for my Disaster Area DMC-6 MIDI pedal to control the Pickup Machines on the Elektron Octatrack. The included .ino sketch contains the C code so it can be modified to be used in other models of DMC MIDI pedals or other AVR based MIDI controllers. 
+I wanted to customize the firmware for my Disaster Area DMC-6 MIDI pedal to control the
+Pickup Machines on the Elektron Octatrack.
+The included .ino sketch contains the C code so it can be modified to be used in other models of
+DMC MIDI pedals or other AVR based MIDI controllers. 
 
 The firmware configures the output of the pedal as follows:
 
