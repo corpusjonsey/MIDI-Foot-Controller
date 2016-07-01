@@ -1,13 +1,14 @@
-/* DMC-6 Octatrack Firmware v1.1
+/* DMC-6 Octatrack Firmware v1.2
 
-  1:  INAB rec #61
+  1:  Combo rec #60
   2:  Pickup Play/Stop #64
   3:  Active track down #69
   4:  Seq Start/Stop #34
   5:  Toggle Seq sync+start #71
   6:  Active track up #68
 
-  v1.1 - Updated to Bounce2 library, TODO: Expression control
+  v1.1 - Update to Bounce2 library
+  v1.2 - Change switch 1 to Combo rec #60, TODO: Expression control
 
 */
 
@@ -30,7 +31,7 @@
 
 //#define EXP 19
 
-#define MIDI_CHANNEL 9 // MIDI channel = Octatrack autochannel 9
+#define MIDI_CHANNEL 11 // MIDI channel = Octatrack default autochannel 11
 
 int ledArray[] = {9, 14, 15, 16, 17, 13};
 int ledVal[] = {0, 0, 0, 0, 0, 0};
@@ -119,7 +120,7 @@ void loop() {
 
   if (bounce1.update() ) { //if there is a button press
     if (bounce1.read() == LOW ) { //if button 1 is pressed
-      midiNote(61); //send note
+      midiNote(60); //send note
       state = 0; //update state
       ledVal[state] = 1;
     }

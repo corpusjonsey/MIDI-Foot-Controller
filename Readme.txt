@@ -1,5 +1,8 @@
 MIDI Foot Controller firmware for Elektron Octatrack Pickup Machine control.
 
+  v1.1 - Update to Bounce2 library
+  v1.2 - Change switch 1 to Combo rec #60, TODO: Expression control
+
 Use this firmware at your own risk!
 
 I wanted to customize the firmware for my Disaster Area DMC-6 MIDI pedal to control the
